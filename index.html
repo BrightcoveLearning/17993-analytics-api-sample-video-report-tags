@@ -6,17 +6,17 @@
   <title>In this sample, you will learn how to get reports on videos by the tags assigned to them and return the results in JSON or CSV format.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-code-pro" type="text/css"/>
-  
+
   <link rel='stylesheet prefetch' href='http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/js/pikaday/pikaday.css'>
 
       <link rel="stylesheet" href="css/style.css">
 
-  
+
 </head>
 
 <body>
 
-    <section class="bcls-section">
+  <section class="bcls-section">
     <h2 id="Request_Options">Request Options</h2>
 
     <p>Where no default value is indicated, there is none.</p>
@@ -72,6 +72,11 @@
                 <td>Tags (add one or more tags separated by commas - default: <code>bird,budapest</code>):</td>
                 <td><input class="aapi-request" id="tags" type="text" size="70" /></td>
               </tr>
+                            <tr>
+                <td></td>
+                <td><input class="aapi-request" id="csv_format" type="checkbox" value="csv" /> <label for="csv">Get Data in CSV format</td>
+              </tr>
+
             </tbody>
           </table>
         </div>
@@ -96,10 +101,11 @@
     <p><button class="bcls-button" id="selectData">Select the Data to Copy</button></p>
     <textarea class="bcls-code" id="responseFrame" style="height:12em;">Response will appear here...</textarea>
   </section>
+
   <script src='http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js'></script>
 <script src='http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/js/pikaday/pikaday.min.js'></script>
 
-  
+
 
     <script  src="js/index.js"></script>
 
